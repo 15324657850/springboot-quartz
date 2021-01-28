@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.springbootdynamicquartz.mapper.JobMapper">
+  <resultMap id="BaseResultMap" type="com.example.springbootdynamicquartz.entity.Job">
+    <!--@mbg.generated-->
+    <!--@Table job-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="job_name" jdbcType="VARCHAR" property="jobName" />
+    <result column="bean_name" jdbcType="VARCHAR" property="beanName" />
+    <result column="method_name" jdbcType="VARCHAR" property="methodName" />
+    <result column="method_params" jdbcType="VARCHAR" property="methodParams" />
+    <result column="cron_expression" jdbcType="VARCHAR" property="cronExpression" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="status" jdbcType="BOOLEAN" property="status" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, job_name, bean_name, method_name, method_params, cron_expression, remark, `status`, 
+    create_time, update_time
+  </sql>
+</mapper>

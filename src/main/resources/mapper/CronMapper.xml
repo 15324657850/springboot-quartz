@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.springbootdynamicquartz.mapper.CronMapper">
+  <resultMap id="BaseResultMap" type="com.example.springbootdynamicquartz.entity.Cron">
+    <!--@mbg.generated-->
+    <!--@Table cron-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="send_time" jdbcType="VARCHAR" property="sendTime" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="cron_str" jdbcType="VARCHAR" property="cronStr" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, send_time, `status`, cron_str
+  </sql>
+</mapper>
